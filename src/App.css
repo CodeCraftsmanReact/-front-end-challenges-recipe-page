@@ -1,38 +1,125 @@
-.App {
-  text-align: center;
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+body{
+    font-family: "Outfit", sans-serif;
+}
+.background{
+    background-color: hsl(30, 54%, 90%);
+    padding: 2rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.page{
+    background-color: #FFF;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.food-description{
+    font-family: "Outfit", sans-serif;
+}
+
+.header-image{
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.font-heading{
+    font-family: "Young Serif", serif;
+    font-size: 3vw;
+}
+
+.font-subheading{
+    font-family: "Outfit", sans-serif;
+}
+
+.nutrition-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.prep-section{
+    background-color: hsl(330, 100%, 98%);
+    padding:0.5rem;
+    border-radius: 0.7rem;
+}
+
+span{
+    font-weight: 700;
+}
+
+.prep-heading{
+    color:hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+}
+
+.section-heading{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+ul{
+    list-style: none;
+    padding-left:0;
+}
+.li-ingredients::before {
+    content: "•";
+    color: hsl(14, 45%, 36%);
+    display: inline-block;
+    width: 1em;
+    margin-left: 0;
+    margin-right: 1.5rem;
+    margin-bottom:0.5rem;
+}
+
+.li-prep::before{
+    content: "•";
+    color: hsl(332, 51%, 32%);
+    display: inline-block;
+    width: 1em;
+    margin-left: 0;
+    margin-right: 0.5rem;
+    margin-bottom:0.5rem;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin: 1em 0;
+    padding: 0;
   }
+
+ol{
+    padding-left: 1.5rem;
+   
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+ol > li{
+    padding-left:1rem;
 }
 
-.App-link {
-  color: #61dafb;
+ol li::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: 800;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nutrition-value{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
+@media only screen and (min-width: 800){
+    .background{
+        background-color: #995413;
+        padding: 2rem;
+    }
 }
