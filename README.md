@@ -22,8 +22,8 @@ This was a pretty basic exercise, demonstrating my ability to create responsive 
 ### Links
 
 coming soon...
-<!-- - Solution URL: [Add solution URL here](https://your-solution-url.com) -->
-<!-- - Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
+<!-- - Solution URL: [solution URL](https://www.frontendmentor.io/solutions/recipe-page-RcUFm-j4o7) -->
+<!-- - Live Site URL: [live site URL]([https://your-live-site-url.com](https://front-end-challenges-recipe-page.vercel.app/)) -->
 
 ## My process
 
