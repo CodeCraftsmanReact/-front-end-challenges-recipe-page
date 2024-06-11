@@ -6,6 +6,7 @@ function App() {
     <div className="background">
       <div className='page'>
         <img className='header-image' src={omelette} />
+        <div className='mobile-padding'>
         <h3 className='font-heading'>Simple Omelette Recipe</h3>
         <p className='food-description'>
           An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.
@@ -63,6 +64,7 @@ function App() {
             <div>Fat</div>
             <div className='nutrition-value'>22g</div>
           </div>
+        </div>
         </div>
       </div>
     </div>

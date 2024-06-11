@@ -1,31 +1,17 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
 
-body{
-    font-family: "Outfit", sans-serif;
-}
 .background{
     background-color: hsl(30, 54%, 90%);
     padding: 2rem;
 }
 
-.page{
-    background-color: #FFF;
-    width: 80%;
-    margin: 0 auto;
-    border-radius: 1rem;
-    padding: 1.5rem;
-    max-width: 600px;
+body{
+    font-family: "Outfit", sans-serif;
 }
 
 .food-description{
     font-family: "Outfit", sans-serif;
-}
-
-.header-image{
-    width: 100%;
-    border-radius: 1rem;
 }
 
 .font-heading{
@@ -37,41 +23,21 @@ body{
     font-family: "Outfit", sans-serif;
 }
 
-.nutrition-item{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 20px;
+.header-image{
+    width: 100%;
+    border-radius: 1rem;
 }
 
-.prep-section{
-    background-color: hsl(330, 100%, 98%);
-    padding:0.5rem;
-    border-radius: 0.7rem;
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid hsl(30, 18%, 87%);
+    margin: 1em 0;
+    padding: 0;
 }
 
-span{
-    font-weight: 700;
-}
-
-.prep-heading{
-    color:hsl(332, 51%, 32%);
-    font-weight: 700;
-}
-
-p{
-    font-size: 16px;
-}
-
-.section-heading{
-    color: hsl(14, 45%, 36%);
-    font-family: "Young Serif", serif;
-}
-
-ul{
-    list-style: none;
-    padding-left:0;
-}
-.li-ingredients::before {
+  .li-ingredients::before {
     content: "•";
     color: hsl(14, 45%, 36%);
     display: inline-block;
@@ -91,18 +57,19 @@ ul{
     margin-bottom:0.5rem;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid hsl(30, 18%, 87%);
-    margin: 1em 0;
-    padding: 0;
-  }
+.nutrition-item{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.nutrition-value{
+    color: hsl(14, 45%, 36%);
+    font-weight: 600;
+}
 
 ol{
-    padding-left: 1.5rem;
-   
+    padding-left: 1.5rem;   
 }
 
 ol > li{
@@ -113,13 +80,67 @@ ol li::marker {
     color: hsl(14, 45%, 36%);
     font-weight: 800;
 }
-.nutrition-value{
-    color: hsl(14, 45%, 36%);
-    font-weight: 600;
+
+.page{
+    background-color: #FFF;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    max-width: 600px;
 }
-@media only screen and (min-width: 800){
+
+.prep-section{
+    background-color: hsl(330, 100%, 98%);
+    padding:0.5rem;
+    border-radius: 0.7rem;
+}
+.prep-heading{
+    color:hsl(332, 51%, 32%);
+    font-weight: 700;
+}
+
+p{
+    font-size: 16px;
+}
+
+span{
+    font-weight: 700;
+}
+
+.section-heading{
+    color: hsl(14, 45%, 36%);
+    font-family: "Young Serif", serif;
+}
+
+ul{
+    list-style: none;
+    padding-left:0;
+}
+
+@media only screen and (max-width: 600px) {
     .background{
-        background-color: #995413;
+        padding: 0;
+        background-color:transparent;
+    }
+    .font-heading{
+        font-size: 8vw;
+        margin: 0;
+    }
+    .header-image{
+        width: 100%;
+        border-radius:0; 
+    }
+    .mobile-padding{
         padding: 2rem;
+        margin: 0 auto;
+    }
+    .page{
+        margin:0;
+        padding:0;
+        width: fit-content;
+    }
+    .section-heading{
+        font-size: 7vw;
     }
 }
